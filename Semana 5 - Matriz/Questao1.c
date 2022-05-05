@@ -12,20 +12,20 @@ int main()
     
     scanf("%d %d", &l, &c);
     
-    int mat[l][c];
-    
     int k = 0;
-    
+    int v = 0;
     scanf("%d %d", &pl, &pc);
     
     for(int i = 0; i < l; i++){
         for(int j = 0; j < c; j++){
-            mat[i][j] = vet1[k];
+            if(i == pl && j == pc){
+                v = vet1[k];
+            }
             k++;
         }
     }
     
-    printf("%d", mat[pl][pc]);
+    printf("%d", v);
 
     return 0;
 }
