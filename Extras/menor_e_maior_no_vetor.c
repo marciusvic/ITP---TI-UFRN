@@ -1,3 +1,4 @@
+// Obter o maior e o menor valor de um vetor
 #include <stdio.h>
 
 int main() {
@@ -38,8 +39,9 @@ int main() {
         }
     }
     
-    printf("\n");
+// o if(i != (n-1)), faz imprimir não imprimir a vígula depois do último número.
 
+    printf("\n");
     
     printf("o menor valor digitado foi %d, e o maior valor digitado foi %d \n", menor, maior);
     
