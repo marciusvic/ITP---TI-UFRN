@@ -78,17 +78,17 @@ int veri_num(int n, char str1[n]){
     }
 }
 
-void verificar_senha(int n, char str1[n]){
+int verificar_senha(int n, char str1[n]){
     int etp1 = veri_char(n, str1);
     int etp2 = veri_maiu(n, str1);
     int etp3 = veri_minu(n, str1);
     int etp4 = veri_num(n, str1);
     
     if(etp1 == 1 && etp2 == 1 && etp3 == 1 && etp4 == 1){
-        printf("verdadeiro");
+        return 1;
     }
     else{
-        printf("falso");  
+        return 0; 
     }
     
 }
@@ -98,7 +98,15 @@ int main(){
     
     fgets(senha, 21, stdin);
     
-    verificar_senha(21, senha);
+    int veri = verificar_senha(21, senha);
+
+    if(veri == 1){
+        printf("verdadeiro");
+    }
+    else{
+        printf("falso");
+    }
+
     return 0;
 }
 
