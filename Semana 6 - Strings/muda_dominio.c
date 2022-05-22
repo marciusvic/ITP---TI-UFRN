@@ -81,7 +81,7 @@ int main(){
         for(int j = 0; j < aux; j++){
             printf("%c", str3[j]);
         }
-
+        printf("\n");
     }
     
     
