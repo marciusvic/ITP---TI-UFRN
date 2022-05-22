@@ -50,7 +50,7 @@ int sub_dom(int nG, int nP, char str1[nG], char str2[nP], char str3[nG]){
     }
     
     int j = 0, pos = 0;
-    for(int i = (aux1 + 1) ; j <= tam_str2; i++){
+    for(int i = (aux1 + 1) ; j <= (tam_str2 - 1); i++){
         str3[i] = str2[j++];
         pos = i;
     }
