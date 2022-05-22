@@ -71,7 +71,7 @@ int main(){
     char str1[101], str2[21], str3[101];
     int aux = 0;
     
-    //for(int i = 0; i < 20; i++){
+    for(int i = 0; i < 20; i++){
         printf("Digite o email que deseja substituir o domínio:\n");
         fgets(str1, 101, stdin);
         printf("Digite o novo domínio:\n");
@@ -82,7 +82,7 @@ int main(){
             printf("%c", str3[j]);
         }
 
-    //}
+    }
     
     
     return 0;
