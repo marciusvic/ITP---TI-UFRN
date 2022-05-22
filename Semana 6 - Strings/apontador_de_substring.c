@@ -35,7 +35,7 @@ int buscar_substring(int n, char str1[n], char str2[n], int pos[n]){
         else{
             j = 0;
         }
-        if(str1[i] == str2[j]){
+        if(str1[i] == str2[j] && j != 1){
             j++;
         }
         if(j == n_str2){
